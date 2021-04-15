@@ -107,3 +107,28 @@
 .friend-list .avatar {
   margin-right: 45px;
 }
+
+.transaction-history {
+  margin-left: 20px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  border-radius: 5px;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.transaction-history td, th {
+  padding: 5px 10px;
+}
+
+.transaction-history td:not(:last-child), th:not(:last-child) {
+  border-right: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.transaction-history thead tr {
+  border-bottom: 2px solid #000;
+  background-color: rgba(245, 153, 67, 0.4);
+}
+
+.transaction-history tbody tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.2);
+}

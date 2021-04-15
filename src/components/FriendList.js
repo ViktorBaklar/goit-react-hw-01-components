@@ -1,4 +1,4 @@
-import FriendListItem from './FriendListItem'
+import FriendListItem from './friendListItem'
 
 const FriendList = ({ friends }) => (
   <ul className="friend-list">
