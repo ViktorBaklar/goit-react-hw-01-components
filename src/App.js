@@ -16,7 +16,7 @@ const App = () => {
       stats={user.stats}
     />
     <h2>Task-2. Statistical data</h2>
-    <Statistic />
+    <Statistic title="Upload stats" stats={statisticalData} />
   </div>
 }
 

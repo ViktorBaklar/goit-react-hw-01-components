@@ -39,3 +39,32 @@
   cursor: pointer;
   text-decoration: underline cadetblue;
 }
+
+.statistics {
+  padding: 0 20px;
+  width: 300px;
+  text-align: center;
+}
+
+.stat-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  /* text-align: center; */
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  width: calc(300px/5);
+}
+
+/* .item:not(:last-child) {
+  margin-right: 10px;
+} */
+
+.percentage {
+  font-size: larger;
+}
