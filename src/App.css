@@ -1,0 +1,41 @@
+.profile {
+  width: 160px;
+  /* height: 200px; */
+  padding: 10px;
+  background-color: bisque;
+}
+
+.description p {
+  text-align: center;
+}
+
+.avatar {
+  width: 100%;
+}
+
+.stats {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stats li {
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.label {
+  font-style: italic;
+}
+
+.tag {
+  color: blue;
+}
+
+.tag:hover {
+  cursor: pointer;
+  text-decoration: underline cadetblue;
+}
