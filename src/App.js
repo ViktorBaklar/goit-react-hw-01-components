@@ -25,7 +25,7 @@ const App = () => {
     <h2>Task-3. Friendslist</h2>
     <FriendList friends={friends} />
     <h2>Task-4. Transactions</h2>
-    <TransactionHistory items={transactions} />;
+    <TransactionHistory items={transactions} />
   </div>
 }
 
