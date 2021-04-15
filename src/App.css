@@ -1,15 +1,18 @@
 .profile {
-  width: 160px;
+  width: 260px;
   /* height: 200px; */
   padding: 10px;
   background-color: bisque;
+  margin-left: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 .description p {
   text-align: center;
 }
 
-.avatar {
+.profile .avatar {
   width: 100%;
 }
 
@@ -41,9 +44,12 @@
 }
 
 .statistics {
-  padding: 0 20px;
+  padding: 0;
+  margin-left: 20px;
   width: 300px;
   text-align: center;
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 .stat-list {
@@ -55,16 +61,49 @@
   justify-content: center;
 }
 
-.item {
+.stat-list > .item {
   display: flex;
   flex-direction: column;
   width: calc(300px/5);
 }
 
-/* .item:not(:last-child) {
-  margin-right: 10px;
-} */
-
 .percentage {
   font-size: larger;
+}
+
+.status {
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin-right: 20px;
+}
+
+.status.online {
+  background-color: green;
+}
+
+.status.offline {
+  background-color: red;
+}
+
+.friend-list {
+  list-style: none;
+  padding: 15px 20px;
+}
+
+.friend-list > .item {
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  border-radius: 5px;
+  width: 260px;
+  padding: 5px 15px;
+}
+
+.friend-list > .item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.friend-list .avatar {
+  margin-right: 45px;
 }
