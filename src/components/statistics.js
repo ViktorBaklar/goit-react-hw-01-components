@@ -1,4 +1,6 @@
-const Statistic = ({ title, stats }) => (
+import PropTypes from 'prop-types';
+
+const Statistics = ({ title, stats }) => (
   <section className="statistics">
     {title && <h2 className="title">{title}</h2>}
 
@@ -18,8 +20,19 @@ const getRandomColor = () => {
   return "#" + (0x1000000 + (Math.random()) * 0xffffff).toString(16).substr(1, 6);
 };
 
-// const itemStyle = {
-//   backgroundColor: getRandomColor(),
-// }
+Statistics.defaultProps = {
+  title: null,
+};
 
-export default Statistic;
+Statistics.propTypes = {
+  title: PropTypes.string,
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequire,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    }),
+  ).isRequired,
+};
+
+export default Statistics;
