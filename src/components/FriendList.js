@@ -19,7 +19,7 @@ FriendListItem.propTypes = {
     PropTypes.shape({
       id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequire,
     }),
-  ).isRequired
+  )
 };
 
 export default FriendList;
